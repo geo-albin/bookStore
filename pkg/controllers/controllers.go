@@ -82,6 +82,12 @@ func UpdateBook(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	_, err = models.GetBookById(int64(id))
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
 	var book models.Book
 	json.NewDecoder(r.Body).Decode(&book)
 
