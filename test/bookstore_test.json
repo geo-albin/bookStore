@@ -34,7 +34,7 @@
                 "version": "V11"
               },
               "host": "localhost:8080",
-              "path": "/books/55"
+              "path": "/books/3"
             },
             "id": "10d48285-d455-414b-87c9-7b7a5eec2da9",
             "name": "DeleteBook",
@@ -106,7 +106,7 @@
                 "version": "V11"
               },
               "host": "localhost:8080",
-              "path": "/books/2"
+              "path": "/books/10"
             },
             "id": "8ccab631-fe84-40de-8536-02a3c3f6854c",
             "name": "getBookByID",
@@ -172,10 +172,10 @@
                 "version": "V11"
               },
               "host": "localhost:8080",
-              "path": "/books/1"
+              "path": "/books/10"
             },
             "id": "d5add788-db83-4e0c-8fd9-a78aa528f7cf",
-            "name": "updateMovie",
+            "name": "updateBook",
             "headers": [
               {
                 "enabled": true,
