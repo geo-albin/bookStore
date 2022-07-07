@@ -2,7 +2,6 @@ package controllers
 
 import (
 	"encoding/json"
-	"log"
 	"net/http"
 	"strconv"
 
@@ -59,7 +58,6 @@ func DeleteBook(w http.ResponseWriter, r *http.Request) {
 }
 
 func CreateBook(w http.ResponseWriter, r *http.Request) {
-	log.Println("Enter CreateBook")
 	var book models.Book
 	json.NewDecoder(r.Body).Decode(&book)
 
